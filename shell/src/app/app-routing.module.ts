@@ -5,6 +5,7 @@ import { LayoutComponent } from './layout/layout.component';
 
 const HOME_URL    = 'http://localhost:4801/remoteEntry.js';
 const REPORTS_URL = 'http://localhost:4802/remoteEntry.js';
+const LOGIN_URL   = 'http://localhost:4803/remoteEntry.js';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
+        pathMatch: 'full',
         loadChildren: () => loadRemoteModule({
             remoteEntry: HOME_URL,
             remoteName: 'homepage',
@@ -31,6 +33,16 @@ const routes: Routes = [
       }
     ]
   },
+  {
+    path: 'login',
+    loadChildren: () => loadRemoteModule({
+      remoteEntry: LOGIN_URL,
+      remoteName: 'login',
+      exposedModule: './Module'
+    })
+    .then(m => m.LoginModule)
+
+  }
 
 ];
 
