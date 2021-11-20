@@ -1,0 +1,1 @@
+# module-federetion-multirepo-microfrontends
