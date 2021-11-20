@@ -1,1 +1,20 @@
-<p>Login Mircofrontend home works!</p>
+<form class="form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+  <div>
+    <div class="form-control">
+      <label for="username">First Name: </label>
+      <input id="username" type="text" formControlName="username">
+    </div>
+
+    <div class="form-control">
+      <label for="password">Last Name: </label>
+      <input id="password" type="password" formControlName="password">
+    </div>
+
+    <div class="form-control button text-right">
+      <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </div>
+  </div>
+
+
+</form>
