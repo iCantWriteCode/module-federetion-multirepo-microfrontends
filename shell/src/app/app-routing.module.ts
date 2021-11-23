@@ -1,11 +1,14 @@
-import { loadRemoteModule } from '@angular-architects/module-federation';
+import { loadRemoteModule, loadRemoteEntry } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 
+import { AuthLibModule, AuthLibComponent } from 'auth-lib'
+
 const HOME_URL    = 'http://localhost:4801/remoteEntry.js';
 const REPORTS_URL = 'http://localhost:4802/remoteEntry.js';
-const LOGIN_URL   = 'http://localhost:4803/remoteEntry.js';
+// const LOGIN_URL   = 'http://localhost:4803/remoteEntry.js';
+const AUTH_LIB    = 'http://localhost:4804/remoteEntry.js';
 
 const routes: Routes = [
   {
@@ -35,13 +38,7 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    loadChildren: () => loadRemoteModule({
-      remoteEntry: LOGIN_URL,
-      remoteName: 'login',
-      exposedModule: './Module'
-    })
-    .then(m => m.LoginModule)
-
+    component: AuthLibComponent
   }
 
 ];
