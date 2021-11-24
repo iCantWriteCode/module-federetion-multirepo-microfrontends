@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
-import { AuthLibService } from './auth-lib.service'
+import { AuthLibService } from '../services/auth-lib.service'
 
 @Component({
   selector: 'lib-auth-lib',

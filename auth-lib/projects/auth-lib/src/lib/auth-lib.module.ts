@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
-import { AuthLibComponent } from './auth-lib.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { AuthLibComponent } from './components/auth-lib.component';
 
 
 @NgModule({
