@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
 
+import { AuthLibModule } from 'auth-lib'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +14,8 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AuthLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
