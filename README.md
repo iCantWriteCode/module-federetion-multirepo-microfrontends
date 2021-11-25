@@ -15,7 +15,7 @@ This is an example of a **Angular** microfrontends on **multirepo** implemented 
 - [x] :tada: Create Basic microfrontends 
 - [x] :tada: Connect them with routing (reports MF have nested routing too)
 - [x] :tada: Communicate between apps with shared library
-- [ ] UI Component Library to share between apps
+- [x] :tada: UI Component Library to share between apps
 - [ ] Add React application
 - [ ] Share data between **React** and **Angular** apps 
 - [ ] Better Documentation 
