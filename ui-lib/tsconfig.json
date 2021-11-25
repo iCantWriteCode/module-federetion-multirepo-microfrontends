@@ -21,11 +21,9 @@
       "dom"
     ],
     "paths": {
-      "auth-lib": [
-        "../auth-lib/projects/auth-lib/src/public-api.ts"
-      ],
       "ui-lib": [
-        "../ui-lib/projects/ui-lib/src/public-api.ts"
+        "dist/ui-lib/ui-lib",
+        "dist/ui-lib"
       ]
     }
   },

@@ -13,4 +13,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void { }
 
+  buttonClickedEvent(data: any) {
+    console.log('Data: ', data);
+
+  }
+
 }

@@ -6,7 +6,7 @@ const share = mf.share;
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, 'tsconfig.json'),
-  ['auth-lib']);
+  ['auth-lib', 'ui-lib']);
 
 module.exports = {
   output: {
@@ -39,6 +39,7 @@ module.exports = {
 
           // Custom Libs
           "auth-lib": { singleton: true },
+          "ui-lib": { singleton: true },
           ...sharedMappings.getDescriptors()
         })
 
