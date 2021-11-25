@@ -1,2 +1,8 @@
 <p>Homepage Microfrontend home works!</p>
 User Name {{ authService.user}}
+<br>
+<h3>ui-lib-button</h3>
+<ui-lib-button [text]="'test'" [radius]="4" (buttonClicked)="buttonClickedEvent($event)"></ui-lib-button>
+<br>
+<h3>ui-lib-card</h3>
+<ui-lib-card [text]="'test'"></ui-lib-card>
